@@ -21,8 +21,8 @@ sub queuedTransactionsPrint # Печать списка
 
 my @arr : shared = ('qqq', 'www', 'eee', 'rrrr'); # Тестовый массив
 my @arr2 : shared = ('aaa2', 'sss2', 'ddd2','ffff2'); # Тестовый массив 2
-my $var : shared='Strawberry'; # Тестовая переменная
-my $var2 : shared=42; # Тестовая переменная 2
+my $var : shared = 'Strawberry'; # Тестовая переменная
+my $var2 : shared = 42; # Тестовая переменная 2
 
 my $testingTransactions = Thread::Queue->new();    # Тестовые транзакции (пары: ссылка на переменную, ссылка на значение/другую переменную )
 $testingTransactions->enqueue([\$var, \'Cherry']);
